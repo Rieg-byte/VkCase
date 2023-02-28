@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ChevronLeft
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -23,7 +24,7 @@ fun ChatScreen(onBackButton: () -> Unit = {}){
             TopAppBar(backgroundColor = Grey900) {
                 IconButton(onClick = onBackButton) {
                     Icon(
-                        imageVector = Icons.Filled.ChevronLeft,
+                        imageVector = Icons.Filled.ArrowBack,
                         contentDescription = stringResource(id = R.string.back),
                         tint = Color.White
                     )
